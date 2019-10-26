@@ -10,7 +10,7 @@ public class MainController {
 
     @GetMapping("/StartPage")
     public String greeting(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model) {
-        model.addAttribute("name", name);
+        model.addAttribute("колбаска дура", name);
         return "StartPage";
     }
 
